@@ -1,0 +1,14 @@
+let obj = {
+  name: "Keerthana",
+  age: 99,
+  hairColor: "black",
+  likes: "chicken"
+};
+function invertKeysAndValue(obj){
+let targetObj = {};
+for (let [key, value] of Object.entries(obj)){
+targetObj[value] = key;
+}
+return targetObj;
+}
+console.log(invertKeysAndValue(obj));
